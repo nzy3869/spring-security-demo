@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<div class="login">
+    <h2>登录</h2>
+    <div class="login-top">
+        <form action="/auth/form" method="post">
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <div style="display: flex">
+                <input type="text" name="captcha" placeholder="captcha">
+                <img src="/app/api/captcha.jpg" alt="captcha" height="50px" width="150px" style="margin-left: 20px">
+            </div>
+            <div class="forget">
+                <a href="#">forget password</a>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
